@@ -10,22 +10,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   opacity: 0.35;
   pointer-events: none;
   z-index: -1;
   animation: rotate 120s linear infinite;
 
   @media (min-width: $on-tablet) {
-    width: 400px;
-    height: 400px;
+    width: 475px;
+    height: 475px;
     opacity: 0.3;
   }
 
   @media (min-width: $on-laptop) {
-    width: 550px;
-    height: 550px;
+    width: 650px;
+    height: 650px;
     opacity: 0.25;
   }
 }
@@ -47,16 +47,16 @@
   font-size: 1.2em;
   font-weight: normal;
   color: $text-color;
-  transform-origin: 0 125px;
+  transform-origin: 0 150px;
 
   @media (min-width: $on-tablet) {
     font-size: 1.8em;
-    transform-origin: 0 200px;
+    transform-origin: 0 237px;
   }
 
   @media (min-width: $on-laptop) {
     font-size: 2.4em;
-    transform-origin: 0 275px;
+    transform-origin: 0 325px;
   }
 }
 
