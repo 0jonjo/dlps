@@ -25,6 +25,8 @@ github_username:  0jonjo
 
 # Build settings
 markdown: kramdown
+permalink: /:categories/:title:output_ext
+categories: cronica
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
