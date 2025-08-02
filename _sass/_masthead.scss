@@ -14,11 +14,19 @@
   }
 }
 
+.title-break {
+  display: none;
+  @media (min-width: $on-tablet) {
+    display: inline;
+  }
+}
+
 .site-masthead h2 {
   color: $muted-text-color;
   font-size: 1.25em;
   margin: 0;
   padding: 0 2rem;
+
   @media (min-width: $on-tablet) {
     font-size: 3em;
   }
