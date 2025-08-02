@@ -2,6 +2,62 @@
   box-sizing: border-box;
   position: relative;
   text-align: center;
+  overflow: hidden;
+}
+
+.circular-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: -1;
+  animation: rotate 120s linear infinite;
+
+  @media (min-width: $on-tablet) {
+    width: 400px;
+    height: 400px;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $on-laptop) {
+    width: 550px;
+    height: 550px;
+    opacity: 0.25;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.circular-text span {
+  position: absolute;
+  left: 50%;
+  font-family: $font-family;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: $text-color;
+  transform-origin: 0 125px;
+
+  @media (min-width: $on-tablet) {
+    font-size: 1.8em;
+    transform-origin: 0 200px;
+  }
+
+  @media (min-width: $on-laptop) {
+    font-size: 2.4em;
+    transform-origin: 0 275px;
+  }
 }
 
 .site-masthead h1 {
@@ -9,6 +65,7 @@
   margin-bottom: 0;
   margin-top: 1em;
   padding: 0 2rem;
+
   @media (min-width: $on-tablet) {
     font-size: 6em;
   }
@@ -16,6 +73,7 @@
 
 .title-break {
   display: none;
+
   @media (min-width: $on-tablet) {
     display: inline;
   }
